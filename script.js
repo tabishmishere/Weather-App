@@ -37,8 +37,7 @@ async function getWeatherData(city) {
         // updateWeatherIcon(weatherMain);
 
     } catch (error) {
-        console.error("Failed to fetch weather data:", error);
-        alert("Something went wrong. Please try again later.");
+        console.error("Failed to fetch data:", error);
     }
 }
 getWeatherData("Lahore");
