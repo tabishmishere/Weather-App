@@ -21,7 +21,6 @@ async function getWeatherData(city) {
         const data = await response.json();
         // console.log(data);
 
-        // Update UI
         cityName.textContent = data.name;
         windSpeed.textContent = `${data.wind.speed} km/h`;
         humidity.textContent = `${data.main.humidity} %`;
